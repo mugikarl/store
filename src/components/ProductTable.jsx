@@ -31,6 +31,20 @@ const ProductTable = ({ headers,products }) => {
                 ))}
 
             </Table.TBody>
+            <Table.TFoot>
+                <Table.Row>
+                    <Table.ColumnHeader>TOTAL</Table.ColumnHeader>
+                    <Table.Column>
+                        $
+                        {products.reduce(
+                         (previousValue, currentValue) =>
+                            previousValue + currentValue.price,
+                         0
+                        )}
+
+                    </Table.Column>
+                </Table.Row>
+            </Table.TFoot>
         </Table.TableContainer>
     </div>
   );
