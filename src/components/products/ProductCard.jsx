@@ -9,7 +9,7 @@ const ProductCard = ({ imageSrc, name, id }) => {
     <span className="font-bold text-base">{name}</span>
 
     <div className = 'flex justify-end'>
-      <Link to={`/${id}`} className="bg-green-500 hover:bg-green-500/70 px-4 py-2 rounded-lg">View</Link>
+      <Link to={`/products/${id}`} className="bg-green-500 hover:bg-green-500/70 px-4 py-2 rounded-lg">View</Link>
     </div>
   </div>
   );
